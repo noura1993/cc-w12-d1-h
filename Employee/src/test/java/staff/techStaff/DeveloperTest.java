@@ -46,4 +46,16 @@ public class DeveloperTest {
     public void payBonus() {
         assertEquals(30, developer.payBonus(), 0.001);
     }
+
+    @Test
+    public void setName() {
+        developer.setName("Sandra");
+        assertEquals("Sandra", developer.getName());
+    }
+
+    @Test
+    public void cannotSetNameToNull() {
+        developer.setName(null);
+        assertEquals("Rose", developer.getName());
+    }
 }

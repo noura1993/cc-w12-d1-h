@@ -1,7 +1,7 @@
 package staff;
 
 public abstract class Employee {
-    private final String name;
+    private String name;
     private final String nationalInsuranceNumber;
     private double salary;
 
@@ -13,6 +13,12 @@ public abstract class Employee {
 
     public String getName() {
         return this.name;
+    }
+
+    public void setName(String name) {
+        if(name != null) {
+            this.name = name;
+        }
     }
 
     public String getNationalInsuranceNumber() {
