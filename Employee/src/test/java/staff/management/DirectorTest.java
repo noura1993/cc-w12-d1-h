@@ -1,0 +1,43 @@
+package staff.management;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class DirectorTest {
+
+    Director director;
+
+    @Before
+    public void before() {
+        director = new Director("Tom", "KL 45 96 28 G", 4500, "Development", 10000);
+    }
+
+    @Test
+    public void getName() {
+        assertEquals("Tom", director.getName());
+    }
+
+    @Test
+    public void getNationalInsuranceNumber() {
+        assertEquals("KL 45 96 28 G", director.getNationalInsuranceNumber());
+    }
+
+    @Test
+    public void getSalary() {
+        assertEquals(4500, director.getSalary(), 0.001);
+    }
+
+    @Test
+    public void getDeptName() {
+        assertEquals("Development", director.getDeptName());
+    }
+
+    @Test
+    public void getBudget() {
+        assertEquals(10000, director.getBudget(), 0.001);
+    }
+
+
+}
