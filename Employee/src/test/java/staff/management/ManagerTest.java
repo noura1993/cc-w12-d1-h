@@ -2,12 +2,13 @@ package staff.management;
 
 import org.junit.Before;
 import org.junit.Test;
+import staff.Employee;
 
 import static org.junit.Assert.*;
 
 public class ManagerTest {
 
-    Manager manager;
+    Employee manager;
 
     @Before
     public void before() {
@@ -31,7 +32,7 @@ public class ManagerTest {
 
     @Test
     public void getDeptName() {
-        assertEquals("Development", manager.getDeptName());
+        assertEquals("Development", ((Manager) manager).getDeptName());
     }
 
     @Test

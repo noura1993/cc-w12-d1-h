@@ -2,12 +2,13 @@ package staff.techStaff;
 
 import org.junit.Before;
 import org.junit.Test;
+import staff.Employee;
 
 import static org.junit.Assert.*;
 
 public class DeveloperTest {
 
-    Developer developer;
+    Employee developer;
 
     @Before
     public void before() {
